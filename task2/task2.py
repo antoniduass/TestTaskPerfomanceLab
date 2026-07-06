@@ -24,6 +24,7 @@ def read_dotes(path):
                     continue
                 x, y = map(float, line.split())
                 points.append((x, y))
+        return points
     except FileNotFoundError:
         print(f"Ошибка: файл точек по пути {path} не найден")
         return None
